@@ -1,7 +1,3 @@
-# Stock Market Sentiment Analysis
-
-This repository contains code and data for performing sentiment analysis on stock market text data. The goal is to predict the sentiment (positive or negative) of stock market-related text using various machine learning models.
-
 ## Dataset
 
 The dataset used for sentiment analysis consists of two columns: 'Text' and 'Sentiment'. The 'Text' column contains the stock market-related text, while the 'Sentiment' column represents the sentiment of the text as either 1 (positive) or -1 (negative).
@@ -18,21 +14,9 @@ Before training the machine learning models, the dataset undergoes several prepr
 
 Stop words and punctuation are also removed using the `en_core_web_sm` model from spaCy. The preprocessed text is stored in the 'text_processed' column.
 
-## Exploratory Data Analysis (EDA)
-
-EDA is performed on the dataset to gain insights into the distribution of word counts and sentiment. The word count distribution is visualized using a histogram, and the sentiment distribution is visualized using a bar plot.
-
-## Word Clouds
-
-Word clouds are generated to visualize the most common words in positive and negative sentiment texts separately. These word clouds provide a visual representation of the frequently occurring words in each sentiment category.
-
 ## Stemming
 
 Stemming is applied to further reduce the dimensionality of the text data. The Porter stemming algorithm is used to transform words to their base or root form. Stop words are also removed during stemming.
-
-## Data Balancing
-
-To address class imbalance in the dataset, downsampling is performed on the majority class (class 1) to match the number of samples in the minority class (class -1). The balanced dataset is then used for model training.
 
 ## Vectorization
 
@@ -73,8 +57,6 @@ The following dependencies are required to run the code in this repository:
 - scikit-learn
 - tensorflow
 - transformers
-
-The specific versions of the dependencies can be found in the `requirements.txt` file.
 
 ## Usage
 
